@@ -22,57 +22,66 @@
       href="https://fonts.googleapis.com/css?family=Arimo&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css?family=Slackey&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
   </head>
-  <body>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <h1 style="text-align: center; font-size: 80px">Guess the Number</h1>
-    <h5 style="color: grey">Choose a number between 1 & 100</h5>
-    <div class="container">
-      <div id="some_div"></div>
-      <br />
-      <div class="row mx-auto">
-        <h3>You have</h3>
-        <h3 style="padding-right:10px; padding-left:10px" id="count">5</h3>
-        <h3>guesses left</h3>
-      </div>
-      <br />
-      <input id="guessInput" class="mx-auto" />
-      <div id="pastGuess" style="display:none" class="row mx-auto">
-            <div>Guesses:&nbsp</div>
-            <div id="pastGuesses">
+  <body background="img/ripples.png">
+    <div backgound="img/cork-board.png" class="col-lg-12 col-xs-12 mx-auto">
+    
+        <h1 class="title" style="text-align: center;">Guess da Numba</h1>
+        <div class="row">
+              <h5 class="desc ml-auto" style="color: grey; font-size: 17px;">Pick a number between 1 & 100 &nbsp&nbsp</h5>
+            <div class="mr-auto" id="some_div"></div>
+            </div> 
+      
+            <div class="container">
+              <br />
+              <h2 style="margin-top: -25px; font-size: 30px" id="resultArea"></h2>
+
+              <div class="row mx-auto">
+                <h3>You have&nbsp</h3>
+                <h3 id="count">5</h3>
+                <h3 class="mx-auto">&nbspguesses left</h3>
+
+        
+
+              </div>
+              <br />
+              <div id="pastGuess" style="display:none" class="row mx-auto">
+                    <div>Guesses:&nbsp</div>
+                    <div id="pastGuesses">
+                    </div>
+              </div>
+              <input id="guessInput" type="number" class="mx-auto" />
+           
+           
             </div>
-      </div>
-   
+            <br />
+            <a href="#" onclick="numberGame()" id="button">
+              <span>Guess!</span>
+            </a>
+            <audio preload="auto">
+              <source
+                src="https://github.com/nclud/2011.beercamp.com/blob/gh-pages/audio/inception.mp3?raw=true"
+                type="audio/mp3"
+              />
+              <source
+                src="https://github.com/nclud/2011.beercamp.com/blob/gh-pages/audio/inception.ogg?raw=true"
+                type="audio/ogg"
+              />
+            </audio>
+            <br />
+            <button
+              id="playAgain"
+              onClick="window.location.reload();"
+              class="mx-auto"
+              style="display: none;"
+            >
+              Play Again
+            </button>
     </div>
-    <br />
-    <h2 id="resultArea"></h2>
-    <a href="#" onclick="numberGame()" id="button">
-      <span>Guess!</span>
-    </a>
-    <audio preload="auto">
-      <source
-        src="https://github.com/nclud/2011.beercamp.com/blob/gh-pages/audio/inception.mp3?raw=true"
-        type="audio/mp3"
-      />
-      <source
-        src="https://github.com/nclud/2011.beercamp.com/blob/gh-pages/audio/inception.ogg?raw=true"
-        type="audio/ogg"
-      />
-    </audio>
-    <button
-      id="playAgain"
-      onClick="window.location.reload();"
-      class="mx-auto"
-      style="display: none;"
-    >
-      Play Again
-    </button>
+   
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
