@@ -53,6 +53,7 @@ function numberGame() {
     document.getElementById("guessInput").value = "";
     document.getElementById("guessInput").focus();
   } else if (guess < randomNum) {
+    timeLeft = 30;
     guessArray.push(guess);
     resultArea.innerHTML = "More <i class='fas fa-arrow-alt-circle-up'></i>";;
     count.innerHTML = String(count.innerHTML - 1);
