@@ -1,8 +1,9 @@
-Week 2 - Lab - Number Guessing Game
-Introduction 🌟
+# Week 2 - Lab - Number Guessing Game
+
+## Introduction 🌟
 Let's build a new app 📱 for a number guessing game. Our app will let users play timed rounds and have 10 chances to guess the number provided randomly.
 
-Features 🎯🥇🏆
+## Features 🎯🥇🏆
 
 * [x] The user can attempt to guess a random integer between 1 and 100 by entering a value into a textbox. 
 * [x] The user can press a button to check their guess, and receive feedback on whether their guess was too low, too high, or correct. 
@@ -20,7 +21,7 @@ The following **optional** features are implemented:
 * [x] The user can see how long it took to finish each round in seconds.
 * [x] The user is limited to 30 seconds per guess. If the user does not guess within the allotted time, the turn is lost. 
 
-Learning Goals 
+## Learning Goals 
 
 Recognize the uses of javascript and master the ways which they interact with our HTML and CSS
 
