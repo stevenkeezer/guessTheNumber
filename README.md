@@ -14,7 +14,7 @@ Let's build a new app 📱 for a number guessing game. Our app will let users pl
 
 The following **optional** features are implemented:
 
-* [ ] The user can see a history of past guesses.
+* [x] The user can see a history of past guesses.
 * [x] When the user guesses the same number twice, the user receives an error message alerting them to the fact that they've already guessed that number. The number of guesses remaining should not decrease. 
 * [ ] The user can play multiple rounds of the game, and see results about previous rounds on the screen.
 * [ ] The user can see their best score of the session. Best score is defined as the round that took the fewest guesses to arrive at the correct number. 
